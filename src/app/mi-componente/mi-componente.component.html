@@ -1,0 +1,18 @@
+
+<!-- <p>
+  mi-componente works!
+</p> -->
+<!-- <input type="text" (input)="setearNombreTarea($event)"> -->
+<input type="text" [(ngModel)]="nombreTarea">
+<button [disabled]="!permitido" (click)="agregarTarea()">Agregar Tarea</button>
+
+
+<p *ngFor="let tarea of tareas">
+  {{tarea}}
+</p>
+<!-- <p *ngIf="tareaAgregada; else noHayTarea">
+    {{nombreTarea}}
+</p>
+<ng-template #noHayTarea>
+  no se ha agregado ninguna tarea
+</ng-template> -->
